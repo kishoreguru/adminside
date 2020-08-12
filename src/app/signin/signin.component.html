@@ -1,0 +1,24 @@
+<div class="container">
+    <form > 
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="email" >
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" placeholder="Enter password" name="password">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-info">SignIn</button>
+    </form>
+    <small  [routerLink]="['/userRegistration']">New User ?   Register Here</small>
+
+    <br>
+    <button type="trail" class="btn btn-info" [routerLink]="['/userRegistration']">trail navigate via button</button>
+    <!-- <small class="float-right" (click)="goto()">New User ?   Register Here</small>  -->
+  </div>
+
+
+  
