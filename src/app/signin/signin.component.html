@@ -1,24 +1,38 @@
 <div class="container">
-    <form > 
-      <div class="form-group">
+  <span class="login100-form-title">
+    ICIN BANK
+  </span>
+    <form #formdata=ngForm> 
+      <div class="form-email">
         <label for="email">Email:</label>
-        <input type="email" class="form-control" placeholder="Enter email" name="email" >
-      </div>
-      <div class="form-group">
+        <input type="email" class="form-control" placeholder="Enter email" name="email" ngModel required email #uemail=ngModel>
+      </div><br>
+      <div *ngIf="uemail.invalid">
+        <div *ngIf="uemail.errors.required">
+        </div>
+        <div *ngIf="uemail.errors.email">
+            email is invalid
+        </div>
+    </div>
+    <br>
+      <div class="form-password">
         <label for="pwd">Password:</label>
-        <input type="password" class="form-control" placeholder="Enter password" name="password">
-      </div>
+        <input type="password" class="form-control" placeholder="Enter password" name="password" ngModel required >
+      </div><br>
       <div class="checkbox">
         <label><input type="checkbox" name="remember"> Remember me</label>
+      </div><br>
+      <button type="submit" class="btn btn-outline-primary" >Sign In</button>
+      <br><br>
+      <small class="float-center" >New User ? </small> 
+      <div class="register">
+        <button type="button" class="btn btn-link btn-sm float-left" [routerLink]="['/userRegistration']">REGISTER</button>
       </div>
-      <button type="submit" class="btn btn-info">SignIn</button>
     </form>
-    <small  [routerLink]="['/userRegistration']">New User ?   Register Here</small>
-
-    <br>
-    <button type="trail" class="btn btn-info" [routerLink]="['/userRegistration']">trail navigate via button</button>
+    <!-- <small  [routerLink]="['/userRegistration']">New User ?   Register Here</small> -->
     <!-- <small class="float-right" (click)="goto()">New User ?   Register Here</small>  -->
   </div>
 
+ 
 
   

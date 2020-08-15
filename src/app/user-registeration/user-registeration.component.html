@@ -1,1 +1,45 @@
-<p>user-registeration works!</p>
+<div class="container">
+    <span class="login100-form-title">
+      ICIN BANK
+    </span>
+    <br>
+      <form class="form-signup"> 
+        <div class="form-firstname">
+          <label for="firstname">Firstname:</label>
+          <input type="firstname" class="form-control" placeholder="Enter firstname" name="firstname" ngModel required firstname #ufirstname=ngModel>
+        </div>
+        
+        <div class="form-lastname">
+          <label for="lastname">Lastname:</label>
+          <input type="lastname" class="form-control" placeholder="Enter lastname" name="lastname" ngModel required lastname #ulastname=ngModel>
+        </div>
+          <div class="form-phoneno">
+            <label for="phoneno">PhoneNo:</label>
+            <input type="phoneno" class="form-control" placeholder="xxxx xxxx" name="phoneno" ngModel required phoneno #uphoneno=ngModel>
+          </div>
+          <div class="form-email">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" placeholder="Enter email" name="email" ngModel required email #uemail=ngModel>
+          </div>
+          <div class="form-username">
+            <label for="username">Username:</label>
+            <input type="username" class="form-control" placeholder="Enter username" name="username" ngModel required username #uusername=ngModel>
+          </div>
+          <div class="form-password">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" placeholder="Enter password" name="password" ngModel required >
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+        <button type="submit" class="btn btn-outline-primary" >Sign Up!</button>
+        <br><br>
+        <div class="cancel" >
+            <button type="button" class="btn btn-outline-success btn-sm float-left" [routerLink]="['/signin']">cancel</button>
+          </div>
+    </form>
+</div>
+  
+   
+  
+    

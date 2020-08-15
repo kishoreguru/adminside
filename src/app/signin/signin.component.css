@@ -1,0 +1,33 @@
+.container {
+    height: 100%;
+    font-family: Ubuntu-Regular, sans-serif;
+    width: 100%; 
+    background-color: rgb(201, 204, 207); 
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.login100-form-title {
+    font-family: JosefinSans-Bold;
+    font-size: 50px;
+    color: #fff;
+    line-height: 0.1;
+    text-align: center;
+  
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #007bff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
